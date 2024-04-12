@@ -1,0 +1,78 @@
+<!<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Reisewebsite</title>
+    <style>
+        /* CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .destination {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .destination h2 {
+            color: #333;
+        }
+        .destination p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Willkommen auf meiner Reisewebsite</h1>
+    </header>
+    <div class="container">
+        <h2>Galerie von Fotos</h2>
+        <div class="gallery">
+            <img src="OIP.jpg" alt="Strand">
+            <img src="th.jpg" alt="Berge">
+            <img src="download.jpg" alt="Stadt">
+            <!-- Add more photos as needed -->
+        </div>
+        <div class="destination">
+            <h2>Beliebte Reiseziele</h2>
+            <p>Besuchen Sie unsere beliebten Reiseziele: Berge, Strände oder faszinierende Städte.</p>
+            <button id="contactButton">Kontaktieren Sie uns</button>
+        </div>
+    </div>
+    <script>
+        // JavaScript scripts here
+        document.getElementById('contactButton').addEventListener('click', function() {
+            alert('Kontaktieren Sie uns für weitere Informationen über Reisen!');
+        });
+    </script>
+</body>
+</html>
